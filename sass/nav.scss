@@ -1,0 +1,23 @@
+.nav-desktop {
+  position: absolute;
+  background: none;
+  width: 100%;
+  img {
+    width: 300px;
+    margin-top: 15px;
+  }
+  ul {
+    list-style-type: none;
+    display: inline-flex;
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+    li {
+      a {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin: 0 15px;
+      }
+    }
+  }
+}

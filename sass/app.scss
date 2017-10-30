@@ -1,4 +1,34 @@
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
+@font-face {
+  font-family: 'Myriad';
+  src: url('../fonts/myriad-pro.otf');
+}
+
+@font-face {
+  font-family: 'Athelas';
+  src: url('../fonts/athelas-italic.ttf');
+}
+
+@font-face {
+  font-family: 'Chunkfive';
+  src: url('../fonts/chunkfive-print.otf');
+}
+
+@font-face {
+  font-family: 'Sverige';
+  src: url('../fonts/sverige.ttf');
+}
+
+@font-face {
+  font-family: 'There Can Only Be One';
+  src: url('../fonts/there-can-only-be-one.ttf');
+}
+
+
+
+@import 'variables';
+@import 'base-styles';
 @import 'nav';
 @import 'hero';
 @import 'about';
