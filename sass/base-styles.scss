@@ -8,6 +8,11 @@ body {
   padding: 0;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6, p, a, a:visited {
   color: $white;
 }
@@ -23,5 +28,74 @@ a {
     color: $red;
     text-decoration: none;
     transition: 0.2s;
+  }
+}
+
+p {
+  font-family: 'Myriad', sans-serif;
+}
+
+.title {
+  padding-top: 30px;
+  list-style: none;
+  display: inline-flex;
+  li {
+    margin: 0 3px;
+    h1 {
+      font-size: 4em;
+    }
+  }
+  span {
+    color: $red;
+    font-size: 1.5em;
+    vertical-align: bottom;
+  }
+}
+
+// *************
+// Media queries
+// **************
+
+@media (min-width: 1650px) {
+  .title {
+    li {
+      h1 {
+        font-size: 6em;
+        padding-top: 40px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1920px) {
+  .title {
+    li {
+      h1 {
+        font-size: 7em;
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 2300px) {
+  .title {
+    li {
+      h1 {
+        font-size: 8em;
+        padding-top: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    li {
+      h1 {
+        font-size: 2.7em;
+      }
+    }
   }
 }
