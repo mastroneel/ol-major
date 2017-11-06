@@ -6210,5 +6210,52 @@ p {
   .our-products {
     min-height: 0;
     padding-bottom: 90px; } }
+.cocktails {
+  text-align: center;
+  padding-bottom: 60px; }
+  .cocktails .title h1 {
+    color: #222121; }
+  .cocktails p {
+    text-transform: uppercase;
+    color: #222121;
+    font-size: 20px; }
+  .cocktails h6 {
+    font-family: 'There Can Only Be One';
+    color: #222121;
+    font-size: 18px; }
+  .cocktails img {
+    width: 120px;
+    margin-top: 40px; }
+
+@media (min-width: 1680px) {
+  .cocktails {
+    padding-bottom: 90px; }
+    .cocktails img {
+      width: 200px;
+      margin-top: 80px; }
+    .cocktails p {
+      font-size: 28px; }
+    .cocktails h6 {
+      font-size: 28px; } }
+@media (min-width: 1920px) {
+  .cocktails {
+    padding-bottom: 100px; }
+    .cocktails img {
+      width: 220px;
+      margin-top: 90px; }
+    .cocktails p {
+      font-size: 34px; }
+    .cocktails h6 {
+      font-size: 34px; } }
+@media (min-width: 2500px) {
+  .cocktails {
+    padding-bottom: 120px; }
+    .cocktails img {
+      width: 280px;
+      margin-top: 110px; }
+    .cocktails p {
+      font-size: 44px; }
+    .cocktails h6 {
+      font-size: 44px; } }
 
 /*# sourceMappingURL=app.css.map */
