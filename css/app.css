@@ -6056,7 +6056,7 @@ p {
 @media (min-height: 1200px) {
   .hero {
     min-height: 60vh; } }
-@media (min-height: 1500px) {
+@media (min-height: 1440px) {
   .hero {
     min-height: 90vh; } }
 @media (min-width: 1680px) {
@@ -6257,5 +6257,295 @@ p {
       font-size: 44px; }
     .cocktails h6 {
       font-size: 44px; } }
+.locations {
+  text-align: center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/wood-background.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/wood-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/wood-background.jpg");
+  padding-bottom: 60px; }
+
+@media (min-width: 2500px) {
+  .locations {
+    padding-bottom: 100px; } }
+#map-canvas, #panel {
+  height: 500px; }
+
+#map-canvas {
+  width: 90%;
+  margin-left: 70px; }
+
+#panel {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left; }
+  #panel h4 {
+    font-family: 'Myriad', Arial, sans-serif;
+    font-size: 21px; }
+  #panel ul {
+    list-style: none; }
+    #panel ul li {
+      color: #fff;
+      font-family: 'Myriad', Arial, sans-serif;
+      font-size: 25px;
+      letter-spacing: 1px;
+      text-align: left;
+      margin-top: 40px;
+      line-height: 25px; }
+    #panel ul .title::before {
+      content: '*';
+      font-family: 'Chunkfive';
+      display: inline-block;
+      color: #a33d2c;
+      font-size: 40px;
+      margin-top: 10px;
+      margin-right: 4px; }
+
+.storelocator-panel {
+  overflow: auto; }
+
+.storelocator-panel .location-search input {
+  width: 350px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #a33d2c;
+  border-radius: 3px;
+  color: #a33d2c;
+  padding-left: 8px; }
+  .storelocator-panel .location-search input:focus {
+    outline: none; }
+  .storelocator-panel .location-search input::-webkit-input-placeholder {
+    visibility: hidden;
+    color: #a33d2c !important; }
+  .storelocator-panel .location-search input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #a33d2c !important; }
+  .storelocator-panel .location-search input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #a33d2c !important; }
+  .storelocator-panel .location-search input:-ms-input-placeholder {
+    color: #a33d2c !important; }
+
+input.directions-to {
+  border: 2px solid #a33d2c;
+  border-radius: 3px;
+  background: none;
+  margin-top: 15px;
+  height: 30px;
+  color: #a33d2c;
+  padding-left: 8px;
+  width: 175px; }
+
+.directions-panel form input[type="submit"] {
+  margin-top: 15px;
+  background-color: #a33d2c;
+  border: 1px solid #a33d2c;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 15px;
+  margin-right: 5px;
+  font-family: 'Myriad';
+  margin-left: 10px; }
+.directions-panel form .close-directions {
+  margin-top: 15px;
+  background-color: #a33d2c;
+  border: 1px solid #a33d2c;
+  height: 30px;
+  color: white;
+  border-radius: 3px;
+  padding: 7px 10px;
+  margin-left: 5px; }
+
+a.action, a.action:visited {
+  color: #a33d2c; }
+  a.action:hover, a.action:visited:hover {
+    text-decoration: underline; }
+
+.adp, .adp table {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 3px; }
+
+.storelocator-panel .store-list .no-stores {
+  color: grey; }
+
+.store .title {
+  padding-top: 5px; }
+
+.store .action {
+  font-size: 0.8em;
+  margin-right: 0.5em; }
+
+@media (max-width: 1032px) {
+  #panel {
+    width: 300px; }
+
+  .storelocator-panel .location-search input {
+    width: 280px; } }
+@media (max-width: 987px) {
+  #map-canvas {
+    margin: 0 auto; } }
+@media (max-width: 767px) {
+  #map-canvas {
+    width: 60%;
+    height: 400px; }
+
+  #panel {
+    margin-top: 40px; } }
+@media (max-width: 660px) {
+  #map-canvas {
+    width: 80%; } }
+@media (max-width: 540px) {
+  #map-canvas {
+    width: 90%; } }
+@media (max-width: 429px) {
+  #map-canvas {
+    width: 95%;
+    height: 300px; } }
+@media (max-width: 375px) {
+  #map-canvas {
+    width: 98%;
+    height: 290px; } }
+@media (max-width: 330px) {
+  .store .action {
+    font-size: 0.7em;
+    margin-right: 0.5em; } }
+@media (min-width: 1200px) and (min-height: 1050px) {
+  #map-canvas {
+    width: 90%;
+    height: 700px; }
+
+  #panel {
+    width: 600px;
+    height: 700px; } }
+@media (min-width: 1200px) and (min-height: 1200px) {
+  #map-canvas {
+    width: 90%;
+    height: 800px; }
+
+  #panel {
+    width: 700px;
+    height: 800px; } }
+@media (min-height: 1300px) {
+  #map-canvas {
+    margin-top: 150px; }
+
+  #panel {
+    margin-top: 150px; } }
+.contact {
+  text-align: center;
+  min-height: 100vh;
+  padding: 0 100px 90px 100px; }
+  .contact .title h1 {
+    color: #222121; }
+  .contact h2 {
+    text-transform: none; }
+  .contact hr {
+    width: 11em; }
+  .contact .address h3 {
+    color: #222121;
+    font-family: 'Myriad';
+    color: #a33d2c;
+    font-size: 30px;
+    margin-top: -10px; }
+  .contact .address h3, .contact .address p {
+    text-align: left;
+    margin-left: 50px; }
+  .contact .address p {
+    color: #222121;
+    font-size: 24px; }
+  .contact form {
+    width: 80%;
+    text-align: left;
+    float: right;
+    margin-right: 50px;
+    margin-top: -10px; }
+    .contact form p {
+      text-transform: uppercase;
+      color: #222121;
+      margin-top: 15px;
+      margin-bottom: -5px;
+      font-size: 22px; }
+    .contact form input, .contact form select {
+      background-color: #fff;
+      border: 3px solid #a33d2c;
+      border-radius: 3px;
+      height: 40px;
+      width: 100%;
+      color: #222121; }
+      .contact form input:focus, .contact form select:focus {
+        outline: none; }
+  .contact .button-container {
+    text-align: center;
+    margin-top: 30px; }
+    .contact .button-container .button {
+      padding: 10px 20px;
+      background-color: #a33d2c;
+      border: 1px solid #a33d2c;
+      border-radius: 3px;
+      color: #fff;
+      font-family: 'Myriad';
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+  .contact .office-map {
+    height: 300px;
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    margin-left: 50px; }
+
+@media (min-width: 2500px) {
+  .contact form p {
+    font-size: 30px; }
+  .contact form input {
+    height: 50px; }
+  .contact .button-container .button {
+    font-size: 30px; }
+  .contact .address h3, .contact .address p {
+    font-size: 35px; } }
+@media (max-width: 1069px) {
+  .contact {
+    padding: 0 20px 80px 20px; }
+    .contact form {
+      width: 90%; } }
+@media (max-width: 922px) {
+  .contact .address h3, .contact .address p {
+    font-size: 20px; }
+  .contact form {
+    width: 90%;
+    margin: 0 auto;
+    float: none; } }
+@media (max-width: 767px) {
+  .contact {
+    padding: 0; }
+    .contact .address {
+      width: 100%;
+      margin-top: 50px; }
+      .contact .address h3, .contact .address p {
+        margin-left: 0;
+        text-align: center; }
+      .contact .address h3 {
+        font-size: 25px; }
+    .contact .office-map {
+      float: none;
+      margin: 0 auto; } }
+@media (max-width: 350px) {
+  .contact .office-map {
+    width: 290px; } }
+@media (min-width: 1200px) and (min-height: 1050px) {
+  .contact {
+    min-height: 0; } }
+@media (width: 1024px) and (height: 1366px) {
+  .contact {
+    min-height: 0; } }
+@media (width: 768px) and (height: 1024px) {
+  .contact {
+    min-height: 0; } }
+.footer {
+  text-align: center;
+  background-color: #222121;
+  padding: 40px 0; }
+  .footer img {
+    width: 300px; }
 
 /*# sourceMappingURL=app.css.map */

@@ -4,6 +4,29 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- scripts necessary for store locator -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAQpg38og1BS2K1lEWm7TVPSwq-DgWbsLU"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js">
+    </script>
+    <script src="store-locator/store-locator.min.js"></script>
+    <script src="store-locator/bevmo-store-locator.js"></script>
+    <script src="store-locator/panel.js"></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-12846745-20']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!-- end of store locator scripts -->
+
     <title>Ol' Major Bacon Bourbon</title>
   </head>
   <body>
@@ -152,7 +175,9 @@
         </div>
       </div>
     </div>
+    <!-- end our products section -->
 
+    <!-- cocktails section -->
     <div class="cocktails">
       <div class="row">
         <div class="col-xs-12">
@@ -228,6 +253,95 @@
         </div>
       </div>
     </div>
+    <!-- end cocktails section -->
+
+    <!-- locations section -->
+    <div class="locations">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="title">
+            <li><h1><span>*</span></h1></li>
+            <li><h1>Where You Can Find Us</h1></li>
+            <li><h1><span>*</span></h1></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div id="map-canvas"></div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div id="panel"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end locations section -->
+
+    <!-- contact section -->
+    <div class="contact">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="title">
+            <li><h1><span>*</span></h1></li>
+            <li><h1>Contact Us</h1></li>
+            <li><h1><span>*</span></h1></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <form action="php/mail_handler.php" method="post">
+            <p>Your Name*</p>
+            <input type="text" name="name">
+            <p>Company Name*</p>
+            <input type="text" name="company">
+            <p>Company Type*</p>
+            <select class="small-input" name="companytype">
+              <option value="">Retailer</option>
+              <option value="">Distributor</option>
+              <option value="">Individual/Customer</option>
+              <option value="">Press/Media</option>
+              <option value="">Other</option>
+            </select>
+            <p>Email Address*</p>
+            <input type="text" name="email">
+            <p>Phone Number*</p>
+            <input type="tel" name="phone">
+            <p>Message*</p>
+            <input type="text" name="message">
+            <div class="button-container">
+              <button class="button" type="submit" name="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-sm-4 address">
+          <h3>Address</h3>
+          <p>
+            500 Sansome Street #600
+            <br>
+            San Francisco, CA 94111
+            <br>
+            +1 415-813-5045
+            <br>
+            hana@brandedspiritsusa.com
+          </p>
+          <div class="office-map" style="overflow: hidden;">
+              <iframe style="position:relative; top:-50px; border:none;" src="https://www.google.com/maps/d/embed?mid=1MMQhdWelzSPPP1iyYGn66LwRDD4" width="300" height="300"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact section -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="img/white-logo.png">
+        </div>
+      </div>
+    </div>
+
 
 
   </body>
