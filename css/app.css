@@ -6157,16 +6157,26 @@ p {
   background-size: cover;
   background-repeat: no-repeat; }
   .our-products img {
-    width: 180px;
-    margin-top: 40px; }
+    width: 170px;
+    margin-top: 20px; }
   .our-products p {
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
-    margin-top: 12px; }
+    margin-top: 8px;
+    margin-bottom: -5px; }
   .our-products h6 {
     font-family: 'There Can Only Be One';
-    font-size: 27px;
-    color: #fff; }
+    font-size: 20px;
+    color: #fff;
+    margin-top: 8px; }
+  .our-products a {
+    font-family: 'Athelas', serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; }
+    .our-products a:hover {
+      color: #a33d2c;
+      text-decoration: none; }
 
 @media (min-width: 1920px) {
   .our-products img {
