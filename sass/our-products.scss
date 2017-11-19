@@ -14,18 +14,30 @@
   background-size: cover;
   background-repeat: no-repeat;
   img {
-    width: 180px;
-    margin-top: 40px;
+    width: 170px;
+    margin-top: 20px;
   }
   p {
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
-    margin-top: 12px;
+    margin-top: 8px;
+    margin-bottom: -5px;
   }
   h6 {
     font-family: 'There Can Only Be One';
-    font-size: 27px;
+    font-size: 20px;
     color: $white;
+    margin-top: 8px;
+  }
+  a {
+    font-family: 'Athelas', serif;
+    color: $white;
+    text-decoration: none;
+    font-size: 18px;
+    &:hover {
+      color: $red;
+      text-decoration: none;
+    }
   }
 }
 
