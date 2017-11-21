@@ -1,7 +1,7 @@
 .our-products {
   text-align: center;
   min-height: 100vh;
-  padding-bottom: 60px;
+  padding: 0 100px 60px 100px;
   background:
       -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url("../img/wood-background.jpg");
@@ -14,18 +14,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   img {
-    width: 170px;
-    margin-top: 20px;
+    width: 140px;
+    margin-top: 10px;
   }
   p {
-    font-size: 20px;
+    font-size: 17px;
     text-transform: uppercase;
     margin-top: 8px;
     margin-bottom: -5px;
   }
   h6 {
     font-family: 'There Can Only Be One';
-    font-size: 20px;
+    font-size: 18px;
     color: $white;
     margin-top: 8px;
   }
@@ -33,7 +33,7 @@
     font-family: 'Athelas', serif;
     color: $white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     &:hover {
       color: $red;
       text-decoration: none;
@@ -71,6 +71,15 @@
     }
     h6 {
       font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 665px) {
+  .our-products {
+    padding: 0 0 60px 0;
+    .title {
+      font-size: 0.9em;
     }
   }
 }
@@ -113,9 +122,6 @@
     }
     h6 {
       font-size: 16px;
-    }
-    .title {
-      font-size: 0.9em;
     }
   }
 }
