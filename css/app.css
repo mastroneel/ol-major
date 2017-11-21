@@ -5878,118 +5878,135 @@ p {
 @media (max-width: 500px) {
   .title li h1 {
     font-size: 2.7em; } }
-.nav-mobile {
+/* =Variables + Placeholder
+----------------------------------------------------- */
+.site-menu, .toggle-overlay-label {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+
+/* =Navbar
+----------------------------------------------------- */
+.site-navbar {
   display: none;
-  text-align: center;
-  width: 100%;
-  background-color: transparent;
-  height: 70px;
+  font-size: 14px;
+  height: 60px;
+  left: 20px;
   position: fixed;
-  z-index: 99; }
-  .nav-mobile ul {
-    margin-top: -20px; }
-    .nav-mobile ul li {
-      margin-top: 15px; }
-      .nav-mobile ul li a {
-        font-size: 1.5em; }
+  right: 20px;
+  top: 20px;
+  z-index: 11; }
 
-#menuToggle {
-  display: block;
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  -webkit-user-select: none;
-  user-select: none;
-  position: fixed; }
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-  opacity: 0;
-  /* hide this */
-  z-index: 2;
-  /* and place it over the hamburger */
-  -webkit-touch-callout: none; }
-
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
+/* =Menu
+----------------------------------------------------- */
+.site-menu {
   background: #fff;
-  border-radius: 2px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
-
-#menuToggle span:first-child {
-  transform-origin: 0% 0%; }
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%; }
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #fff; }
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2); }
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px); }
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu {
+  bottom: 0;
+  font-size: 14px;
+  height: 100%;
+  left: -200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
   position: fixed;
-  width: 310px;
-  height: 110vh;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 165px;
-  background: #222121;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-  #menu li a {
-    text-transform: uppercase; }
+  top: 0;
+  width: 200px; }
 
-/*
- * And let's fade it in from the left
- */
-#menuToggle input:checked ~ ul {
-  transform: scale(1, 1);
-  opacity: 1; }
+.site-menu-item > a {
+  color: #222121;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px; }
+  .site-menu-item > a:hover, .site-menu-item > a:active {
+    color: #a33d2c; }
+
+.site-menu-item.current > a {
+  color: #a33d2c; }
+
+/* =Overlay toggle
+----------------------------------------------------- */
+.toggle-overlay-checkbox {
+  display: none; }
+
+.toggle-overlay-label {
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1; }
+
+/* Display menu overlay */
+.toggle-menu-checkbox:checked ~ .toggle-overlay-label {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1; }
+
+/* =Menu toggle
+----------------------------------------------------- */
+.toggle-menu-checkbox,
+.toggle-menu-label {
+  display: none; }
+
+.toggle-menu-checkbox:checked ~ .site-menu {
+  left: 0;
+  z-index: 2;
+  box-shadow: 4px 0 16px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 4px 0 16px -4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 4px 0 16px -4px rgba(0, 0, 0, 0.2); }
+
+.toggle-overlay-checkbox:checked ~ .site-menu {
+  left: -200px; }
+
+.toggle-menu-label {
+  cursor: pointer;
+  display: block;
+  padding: 0 0 0 20px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; }
+  .toggle-menu-label:before {
+    background: #a33d2c;
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 2.2em;
+    box-shadow: 0 10px 0 0 #a33d2c, 0 20px 0 0 #a33d2c;
+    -moz-box-shadow: 0 10px 0 0 #a33d2c, 0 20px 0 0 #a33d2c;
+    -webkit-box-shadow: 0 10px 0 0 #a33d2c, 0 20px 0 0 #a33d2c; }
+  .toggle-menu-label:after {
+    color: #a33d2c;
+    content: "";
+    display: inline-block;
+    line-height: 1;
+    margin-top: -9px;
+    padding-right: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border-radius: 2px 2px 2px 2px; }
+
+.toggle-menu-checkbox:checked ~ .toggle-menu-label:after {
+  content: ""; }
+.toggle-menu-checkbox:checked ~ .toggle-menu-label:before {
+  background: #ccc;
+  box-shadow: 0 10px 0 0 #ccc, 0 20px 0 0 #ccc; }
 
 @media (max-width: 870px) {
   .nav-desktop {
     display: none; }
 
-  .nav-mobile {
+  .site-navbar {
     display: block; } }
 .nav-desktop {
   position: absolute;
@@ -6035,9 +6052,9 @@ p {
     margin: 0 10px; } }
 .hero {
   min-height: 100vh;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero-image.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero-image.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero-image.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-image.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-image.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -6102,7 +6119,7 @@ p {
   .about img {
     margin-top: 1%; }
 
-@media (min-height: 667px) {
+@media (max-width: 1024px) and (min-height: 667px) {
   .about {
     min-height: 0; } }
 @media (min-height: 1500px) {
@@ -6150,30 +6167,30 @@ p {
 .our-products {
   text-align: center;
   min-height: 100vh;
-  padding-bottom: 60px;
+  padding: 0 100px 60px 100px;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/wood-background.jpg");
   background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/wood-background.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/wood-background.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   .our-products img {
-    width: 170px;
-    margin-top: 20px; }
+    width: 140px;
+    margin-top: 10px; }
   .our-products p {
-    font-size: 20px;
+    font-size: 17px;
     text-transform: uppercase;
     margin-top: 8px;
     margin-bottom: -5px; }
   .our-products h6 {
     font-family: 'There Can Only Be One';
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     margin-top: 8px; }
   .our-products a {
     font-family: 'Athelas', serif;
     color: #fff;
     text-decoration: none;
-    font-size: 18px; }
+    font-size: 16px; }
     .our-products a:hover {
       color: #a33d2c;
       text-decoration: none; }
@@ -6193,6 +6210,11 @@ p {
     font-size: 46px; }
   .our-products h6 {
     font-size: 40px; } }
+@media (max-width: 665px) {
+  .our-products {
+    padding: 0 0 60px 0; }
+    .our-products .title {
+      font-size: 0.9em; } }
 @media (max-width: 455px) {
   .our-products img {
     width: 140px; }
@@ -6213,9 +6235,7 @@ p {
   .our-products p {
     font-size: 14px; }
   .our-products h6 {
-    font-size: 16px; }
-  .our-products .title {
-    font-size: 0.9em; } }
+    font-size: 16px; } }
 @media (min-height: 1024px) {
   .our-products {
     min-height: 0;

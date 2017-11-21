@@ -1,136 +1,174 @@
 // **********
 // Mobile nav
 // **********
+/* =Variables + Placeholder
+----------------------------------------------------- */
+$toggle-stripe-2: 10px;
+$toggle-stripe-3: 20px;
 
-.nav-mobile {
+$navbar-background: $white;
+$navbar-color: $red;
+
+$transition: .2s ease-in-out;
+
+$menu-width: 200px;
+$menu-shadow: 4px 0 16px -4px rgba(0, 0, 0, .2);
+
+%transition {
+ -webkit-transition: $transition;
+    -moz-transition: $transition;
+         transition: $transition;
+}
+
+
+/* =Navbar
+----------------------------------------------------- */
+.site-navbar {
   display: none;
-	text-align: center;
-  width: 100%;
-  background-color: transparent;
-  height: 70px;
+  font-size: 14px;
+  height: 60px;
+  left: 20px;
   position: fixed;
-  z-index: 99;
-  ul {
-    margin-top: -20px;
-    li {
-      margin-top: 15px;
-      a {
-        font-size: 1.5em;
-      }
+  right: 20px;
+  top: 20px;
+  z-index: 11;
+}
+
+/* =Menu
+----------------------------------------------------- */
+.site-menu {
+  @extend %transition;
+  background: #fff;
+  bottom: 0;
+  font-size: 14px;
+  height: 100%;
+  left: -$menu-width;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  position: fixed;
+  top: 0;
+  width: $menu-width;
+}
+
+.site-menu-item {
+  > a {
+    color: $gray;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    &:hover,
+    &:active {
+      color: $red;
     }
   }
 }
 
-#menuToggle {
-  display: block;
-  position: relative;
-  z-index: 1;
-	padding: 20px;
-  -webkit-user-select: none;
-  user-select: none;
-  position: fixed;
+.site-menu-item.current > a {
+  color: $red;
 }
 
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  -webkit-touch-callout: none;
+/* =Overlay toggle
+----------------------------------------------------- */
+.toggle-overlay-checkbox {
+  display: none;
 }
 
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: $white;
-  border-radius: 2px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: $white;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3) {
+.toggle-overlay-label {
+  @extend %transition;
+  bottom: 0;
+  left: 0;
   opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu {
+  pointer-events: none; // Important to prevent unwanted triggering
   position: fixed;
-  width: 310px;
-	height: 110vh;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 165px;
-  background: $gray;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  li {
-    a {
-      text-transform: uppercase;
-    }
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* Display menu overlay */
+.toggle-menu-checkbox:checked ~ .toggle-overlay-label {
+  background: rgba(0, 0, 0, .5);
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+
+/* =Menu toggle
+----------------------------------------------------- */
+.toggle-menu-checkbox,
+.toggle-menu-label {
+  display: none;
+}
+
+.toggle-menu-checkbox:checked ~ .site-menu {
+  left: 0;
+  z-index: 2;
+          box-shadow: $menu-shadow;
+     -moz-box-shadow: $menu-shadow;
+  -webkit-box-shadow: $menu-shadow;
+}
+
+
+.toggle-overlay-checkbox:checked ~ .site-menu {
+  left: -$menu-width;
+}
+
+.toggle-menu-label {
+  cursor: pointer;
+  display: block;
+  padding: 0 0 0 20px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  &:before {
+    background: $navbar-color;
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 2.2em;
+    box-shadow: 0 $toggle-stripe-2 0 0 $navbar-color, 0 $toggle-stripe-3 0 0 $navbar-color;
+    -moz-box-shadow: 0 $toggle-stripe-2 0 0 $navbar-color, 0 $toggle-stripe-3 0 0 $navbar-color;
+    -webkit-box-shadow: 0 $toggle-stripe-2 0 0 $navbar-color, 0 $toggle-stripe-3 0 0 $navbar-color;
+
+  }
+
+  &:after {
+    color: $navbar-color;
+    content: "";
+    display: inline-block;
+    line-height: 1;
+    margin-top: -9px;
+    padding-right: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border-radius: 2px 2px 2px 2px;
+  }
+}
+
+.toggle-menu-checkbox:checked ~ .toggle-menu-label {
+  &:after {
+    content: "";
+  }
+
+  &:before {
+    background: #ccc;
+    box-shadow: 0 $toggle-stripe-2 0 0 #ccc,
+      0 $toggle-stripe-3 0 0 #ccc;
   }
 }
 
 
-/*
- * And let's fade it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: scale(1.0, 1.0);
-  opacity: 1;
-}
+
 
 
 // Hide desktop nav for small screens and
@@ -140,7 +178,7 @@
   .nav-desktop {
     display: none;
   }
-  .nav-mobile {
+  .site-navbar {
     display: block;
   }
 }
