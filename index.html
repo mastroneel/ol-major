@@ -221,69 +221,756 @@
       </div>
       <div class="row cocktail-row">
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/babes-julep.jpeg">
-          <p>Babe's Julep</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#babesJulepModal">
+            <img src="img/babes-julep.jpeg">
+            <p>Babe's Julep</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="babesJulepModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Babe's Julep</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('baconBirthdayShotModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/babes-julep.jpeg">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('yearOfThePigModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>Leaves from 4-5 mint sprigs</li>
+                        <li> 2 sugar cubes or 1/2 oz simple syrup</li>
+                        <li> 2 1/2 oz bourbon </li>
+                        <li>mint sprig (or piece of bacon) for garnish</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Add mint, syrup, sugar in a julep cup</li>
+                        <li>Muddle</li>
+                        <li>Add Ol' Major Bacon Bourbon</li>
+                        <li>Fill with ice and stir</li>
+                        <li>Add a crispy slice of bacon for garnish</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('yearOfThePigModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/year-of-the-pig.jpeg">
-          <p>Year of the Pig</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#yearOfThePigModal">
+            <img src="img/year-of-the-pig.jpeg">
+            <p>Year of the Pig</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="yearOfThePigModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Year of the Pig</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('babesJulepModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/year-of-the-pig.jpeg">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('yankeeBaconCapetaModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>2 oz. Ol' Major Bacon Bourbon </li>
+                        <li> 1 oz. fresh lemon juice</li>
+                        <li>1/2 oz Maple Syrup</li>
+                        <li>1 teaspoon egg white</li>
+                        <li>   Crushed ice</li>
+                        <li>1/8 to 1/4 teaspoon Sriracha </li>
+                        <li>Orange slice and halved serrano pepper, for garnish</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Pour Ol' Major Bacon Bourbon, lemon juice, syrup and egg white into a shaker and shake</li>
+                        <li>Add hot sauce and ice, shake again</li>
+                        <li>Strain into a cup add the orange slice and pepper to garnish</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('yankeeBaconCapetaModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
+
+
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/yankee-bacon-capeta.png">
-          <p>Yankee Bacon Capeta</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#yankeeBaconCapetaModal">
+            <img src="img/yankee-bacon-capeta.png">
+            <p>Yankee Bacon Capeta</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="yankeeBaconCapetaModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Yankee Bacon Capeta</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('yearOfThePigModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/yankee-bacon-capeta.png">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('oldFashionedModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>1 1/2 oz. Ol’ Major Bacon Bourbon</li>
+                        <li> 1 teaspoon instant powdered chocolate milk mix, such as Quik</li>
+                        <li>1 teaspoon ground cinnamon</li>
+                        <li>1 oz. milk</li>
+                        <li>   1/2 cup sweetened condensed milk</li>
+                        <li>
+                          1 piece of chocolate covered bacon
+                           (The original Brazilian Capeta would add 1 teaspoon guarana protein powder,
+                          but we do not advise this addition.
+                          The combination of alcohol and caffeine can be dangerous to your health.)
+                        </li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Combine Ol’ Major Bacon Bourbon, St-Germain, lemon juice, diluted maple syrup, bitters, and egg white into a mixing glass and shake vigorously with ice.</li>
+                        <li>Strain neat over a chilled martini glass</li>
+                        <li>Garnish with a piece of chocolate covered bacon</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('oldFashionedModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/old-fashioned.jpeg">
-          <p>Bacon Ol' Fashioned</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#oldFashionedModal">
+            <img src="img/old-fashioned.jpeg">
+            <p>Bacon Ol' Fashioned</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="oldFashionedModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Bacon Ol' Fashioned</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('yankeeBaconCapetaModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/old-fashioned.jpeg">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('kevinsBaconModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>2 oz. Ol’ Major Bacon Bourbon</li>
+                        <li>2 dashes Angostura® bitters </li>
+                        <li> 1 splash water</li>
+                        <li>1 tsp. brown sugar</li>
+                        <li>     1 maraschino cherry </li>
+                        <li>1 orange wedge</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Combine ingredients in a shaker</li>
+                        <li>Shake and serve</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('kevinsBaconModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/kevins-bacon.jpeg">
-          <p>Kevin's Bacon</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#kevinsBaconModal">
+            <img src="img/kevins-bacon.jpeg">
+            <p>Kevin's Bacon</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="kevinsBaconModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Kevin's Bacon</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('oldFashionedModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/kevins-bacon.jpeg">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('kentuckyWildboarModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>3 cups water</li>
+                        <li>2 or 3 black tea bags</li>
+                        <li> 1/8 cup maple syrup</li>
+                        <li>1/8 to 1/4 cup Ol’ Major Bacon Bourbon</li>
+                        <li>     2 to 3 sliced orange rounds </li>
+                        <li>3 sprigs of fresh mint</li>
+                        <li>Ice to fill</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Boil water. Remove water from heat and let tea steep for three to five minutes</li>
+                        <li>Place tea in pitcher without tea bags and cool in fridge</li>
+                        <li>Place Ol’ Major Bacon Bourbon, maple syrup, mint, and orange slices in a medium bowl</li>
+                        <li>Muddle and press together</li>
+                        <li>Once mixed together add it to the pitcher and stir well</li>
+                        <li>Fill glasses with ice and pour</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('kentuckyWildboarModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/kentucky-wildboar.jpg">
-          <p>Kentucky Wildboar</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#kentuckyWildboarModal">
+            <img src="img/kentucky-wildboar.jpg">
+            <p>Kentucky Wildboar</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="kentuckyWildboarModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Kentucky Wildboar</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('kevinsBaconModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/kentucky-wildboar.jpg">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('fizzyPiggyModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>1/2 oz Ol’ Major Bacon Bourbon </li>
+                        <li>1/2 oz peach liqueur</li>
+                        <li>1/2 oz Canadian whiskey</li>
+                        <li>  2 oz sweet and sour mix</li>
+                        <li>   2 oz Dr. Pepper® soda</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Combine ingredients in a highball glass full of ice</li>
+                        <li>Stir gently</li>
+                        <li>Garnish with a twist of orange</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('fizzyPiggyModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
       </div>
-      <div class="row">
+      <!-- end first row -->
+
+      <!-- start second row -->
+      <div class="row cocktail-row">
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/fizzy-piggy.jpeg">
-          <p>Fizzy Piggy</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#fizzyPiggyModal">
+            <img src="img/fizzy-piggy.jpeg">
+            <p>Fizzy Piggy</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="fizzyPiggyModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Fizzy Piggy</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('kentuckyWildboarModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/fizzy-piggy.jpeg">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('commieCripplerModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>2 oz Ol' Major Bacon Bourbon  </li>
+                        <li>3/4 oz fresh orange juice </li>
+                        <li>1 1/2 tsp superfine sugar </li>
+                        <li>  3 oz club soda</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Mix all ingredients except ice in a chilled Tom Collins glass</li>
+                        <li>Fill glass halfway with ice and then strain into a glass</li>
+                        <li>Finally, top with club soda</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('commieCripplerModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/commie-crippler.png">
-          <p>Commie Crippler</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#commieCripplerModal">
+            <img src="img/commie-crippler.png">
+            <p>Commie Crippler</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="commieCripplerModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Commie Crippler</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('fizzyPiggyModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/commie-crippler.png">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('brokenHoofModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>1 1/2 oz Ol' Major Bacon Bourbon</li>
+                        <li>3/4 oz triple sec </li>
+                        <li>  3/4 oz lime juice </li>
+                        <li> A couple of dashes licorice liqueur</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Pour the bourbon, triple sec, pernod and lime juice into a cocktail shaker half-filled with ice cubes</li>
+                        <li>Shake well, strain into a cocktail glass, and serve</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('brokenHoofModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/broken-hoof.png">
-          <p>Broken Hoof</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#brokenHoofModal">
+            <img src="img/broken-hoof.png">
+            <p>Broken Hoof</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="brokenHoofModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Broken Hoof</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('commieCripplerModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/broken-hoof.png">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('baconBloodyMaryModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>1 1/2 oz Ol' Major Bacon Bourbon</li>
+                        <li>4 1/2 oz warm/hot apple cider  </li>
+                        <li>lemon or lime wedge</li>
+                        <li>  cinnamon stick</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Mix Ol' Major Bacon Bourbon in mug or tall glass</li>
+                        <li>Add cinnamon stick and lemon or lime wedge as garnish</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('baconBloodyMaryModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/bacon-bloody-mary.png">
-          <p>Bacon Bloody Mary</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#baconBloodyMaryModal">
+            <img src="img/bacon-bloody-mary.png">
+            <p>Bacon Bloody Mary</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="baconBloodyMaryModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Bacon Bloody Mary</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('brokenHoofModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/bacon-bloody-mary.png">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('baconSourModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>1 1/2 oz Ol’ Major Bacon Bourbon</li>
+                        <li>3 oz Ol’ Major Bacon Bloody Mary Mix  </li>
+                        <li>(1 teaspoon of horseradish, if preferred)</li>
+                        <li>Ol’ Major Maple Bacon Salt to Rim the Glass</li>
+                        <li>1 stick bacon to garnish (Well-cooked, left to dry on a paper towel)</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Combine Ol’ Major Bacon Bourbon, Ol’ Major Bacon Bloody Mary Mix, and horseradish (if desired) in a shaker</li>
+                        <li>Stir, then gently swirl until ingredients are well mixed</li>
+                        <li>Using Ol’ Major Maple Bacon Salt, rim a large glass – we chose a mason jar because we are just cool like that..</li>
+                        <li>Pour your drink into the mason jar and garnish with a piece of thoroughly cooked and fairly dry bacon</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('baconSourModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/bacon-sour.jpg">
-          <p>Bacon Sour</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#baconSourModal">
+            <img src="img/bacon-sour.jpg">
+            <p>Bacon Sour</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="baconSourModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Bacon Sour</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('baconBloodyMaryModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/bacon-sour.jpg">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('baconBirthdayShotModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>1 1/4 parts Ol’ Major Bacon Bourbon</li>
+                        <li>1 part St-Germain Liqueur</li>
+                        <li>1 part freshly squeezed and strained lemon juice</li>
+                        <li>1/2 part diluted maple syrup (1:1 ratio of Vermont Grade-A Medium Amber Syrup to water)</li>
+                        <li>1 dash Peychaud’s Bitters</li>
+                        <li>1/4 part pasteurized egg white</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Combine Ol’ Major Bacon Bourbon, St-Germain, lemon juice, diluted maple syrup, bitters, and egg white into a mixing glass and shake vigorously with ice</li>
+                        <li>Strain over fresh ice into a double-old fashioned glass</li>
+                        <li>Garnish with an orange slice and a piece of Applewood smoked bacon</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('baconBirthdayShotModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
         <div class="col-xs-6 col-sm-4 col-lg-2">
-          <img src="img/bacon-birthday-shot.png">
-          <p>Bacon Birthday Shot</p>
-          <h6>7</h6>
+          <div data-toggle="modal" data-target="#baconBirthdayShotModal">
+            <img src="img/bacon-birthday-shot.png">
+            <p>Bacon Birthday Shot</p>
+            <h6>7</h6>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="baconBirthdayShotModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p>Bacon Birthday Shot</p>
+                      <h6>7</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-1">
+                      <button class="prev-next prev" type="button" onclick="showModal('baconSourModal')"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5 image">
+                      <img src="img/bacon-birthday-shot.png">
+                    </div>
+                    <div class="col-xs-1 prev-next-sm-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('babesJulepModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                      <h5>Ingredients:</h5>
+                      <ul>
+                        <li>1 oz Ol’ Major Bacon Bourbon </li>
+                        <li>1/2 oz Fragelico® or other hazelnut liqueur </li>
+                        <li>1 slice of lemon</li>
+                        <li> Sugar</li>
+                      </ul>
+                      <h5>Instructions:</h5>
+                      <ol>
+                        <li>Spread sugar on a small plate or other clean flat surface</li>
+                        <li>Slide lemon slice around the lip of the shot glass, then dip the top of the glass into the sugar</li>
+                        <li>Combine Frangelico® and Ol’ Major Bacon Bourbon in the glass</li>
+                        <li>Take the shot then bite the lemon</li>
+                      </ol>
+                    </div>
+                    <div class="col-xs-1 prev-next-lg-screens">
+                      <button class="prev-next next" type="button" onclick="showModal('babesJulepModal')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <img class="logo" src="img/logo.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
+
+
+
+
+
+
       </div>
     </div>
+
+    <script>
+      function showModal(id) {
+        $(".modal").modal('hide');
+        $("#" + id).modal();
+      }
+    </script>
     <!-- end cocktails section -->
 
     <!-- locations section -->
@@ -375,7 +1062,12 @@
       </div>
     </div>
 
-
+    <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   </body>
 </html>
