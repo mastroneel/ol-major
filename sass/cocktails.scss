@@ -74,3 +74,379 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+.cocktails {
+  min-height: 100vh;
+  padding-bottom: 80px;
+  text-align: center;
+  .cocktail-row {
+    width: 80%;
+    margin: 0 auto;
+  }
+  // Modal
+  .modal-dialog {
+    width: 65%;
+    border-radius: 2px;
+    margin: 0 auto;
+    .modal-content {
+      padding: 30px;
+      .modal-body {
+        border: 3px solid $red;
+        border-radius: 3px;
+        padding: 10px 10px 30px 10px;
+        font-family: 'Myriad', sans-serif;
+        color: $gray;
+        h5 {
+          color: $gray;
+          margin-top: 20px;
+        }
+        .prev-next {
+          color: $red;
+          background-color: $white;
+          border: 1px solid $white;
+          font-size: 50px;
+          margin-top: 120px;
+          transition: 0.2s;
+          &:hover {
+            color: $red;
+            transition: 0.2s;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .prev {
+          float: left;
+        }
+        .next {
+          float: right;
+        }
+        ul, ol {
+          text-align: left;
+          color: $gray;
+          line-height: 1.5;
+          padding: 0;
+          li {
+            font-size: 13px;;
+          }
+        }
+        img {
+          width: 80%;
+          margin-top: 30px;
+        }
+        .logo {
+          max-width: 250px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+// ****************
+// Media queries
+// for main section
+// *****************
+
+@media (max-width: 1247px) {
+  .cocktails {
+    .cocktail-row {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .cocktails {
+    .cocktail-row {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .cocktails {
+    .cocktail-row {
+      padding: 0;
+    }
+  }
+}
+
+// **************
+// Height
+// Media queries
+// **************
+
+@media (min-width: 1200px) and (min-height: 1050px) {
+  .cocktails {
+    .cocktail-row {
+      width: 100%;
+      margin-top: 110px;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 1200px) {
+  .cocktails {
+    .cocktail-row {
+      width: 85%;
+      margin-top: 150px;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 1300px) {
+  .cocktails {
+    .cocktail-row {
+      width: 100%;
+    }
+  }
+}
+
+@media (width: 1024px) and (height: 1366px) {
+  .cocktails {
+    min-height: 0;
+  }
+}
+
+@media (width: 768px) and (height: 1024px) {
+  .cocktails {
+    min-height: 0;
+  }
+}
+
+
+// ***********************
+// Media queries for modal
+// ***********************
+
+
+@media (max-width: 992px) {
+  .cocktails {
+    .modal-dialog {
+      width: 80%;
+      .modal-content {
+        .modal-body {
+          text-align: center;
+          img {
+            width: 25%;
+            margin-top: 10px;
+          }
+          h4 {
+            font-size: 1.5em;
+          }
+          ul, ol {
+            li {
+              font-size: 10px;
+            }
+          }
+          h5 {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 797px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .cocktails {
+    .modal-dialog {
+      width: 90%;
+      .modal-content {
+        .modal-body {
+          img {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 435px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        padding: 15px;
+        .modal-body {
+          h4 {
+            font-size: 18px;
+          }
+          img {
+            width: 50%;
+          }
+          ul, ol {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          .prev-next-lg-screens {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          .prev-next-sm-screens {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        .modal-body {
+          .col-xs-1 {
+            padding: 0;
+          }
+          .prev-next {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ******************************
+// Height media queries for modal
+// ******************************
+@media (min-width: 1500px) and (min-height: 1050px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        padding: 25px;
+        .modal-body {
+          .logo {
+            width: 250px;
+            max-width: 250px;
+            margin-top: 40px;
+          }
+          .prev-next {
+            margin-top: 200px;
+          }
+          h5 {
+            font-size: 20px;
+          }
+          h4 {
+            font-size: 50px;
+          }
+          ul, ol {
+            li {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 1200px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        padding: 25px;
+        .modal-body {
+          .prev-next {
+            margin-top: 250px;
+            font-size: 70px;
+          }
+          .logo {
+            width: 300px;
+            max-width: 300px;
+            margin-top: 60px;
+          }
+          h5 {
+            font-size: 28px;
+          }
+          h4 {
+            font-size: 70px;
+          }
+          ul, ol {
+            li {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1500px) and (min-height: 1300px) {
+  .cocktails {
+    .modal-dialog {
+      .modal-content {
+        padding: 25px;
+        .modal-body {
+          .prev-next {
+            font-size: 90px;
+            margin-top: 300px;
+          }
+          .logo {
+            width: 300px;
+            max-width: 300px;
+            margin-top: 80px;
+          }
+          h5 {
+            font-size: 40px;
+          }
+          h4 {
+            font-size: 80px;
+          }
+          ul, ol {
+            li {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
