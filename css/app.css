@@ -8376,9 +8376,9 @@ p {
     margin: 0 10px; } }
 .hero {
   min-height: 100vh;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-image.jpg");
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-image.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-image.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/hero-image.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/hero-image.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/hero-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -8435,13 +8435,14 @@ p {
   text-align: center;
   min-height: 100vh;
   background-color: #222121;
-  padding-bottom: 60px; }
+  padding-bottom: 50px; }
   .about p {
     font-size: 1.9em;
     width: 50%;
     margin: 0 auto; }
   .about img {
-    margin-top: 1%; }
+    width: 310px;
+    margin-top: 2%; }
 
 @media (max-width: 1024px) and (min-height: 667px) {
   .about {
@@ -8897,6 +8898,13 @@ a.action, a.action:visited {
   font-size: 0.8em;
   margin-right: 0.5em; }
 
+.show-more {
+  display: none; }
+
+.storelocator-filter {
+  position: absolute;
+  margin-top: -90px; }
+
 @media (max-width: 1032px) {
   #panel {
     width: 300px; }
@@ -8906,13 +8914,55 @@ a.action, a.action:visited {
 @media (max-width: 987px) {
   #map-canvas {
     margin: 0 auto; } }
+@media (min-width: 767px) {
+  #panel {
+    margin-top: 70px;
+    max-height: 420px; } }
 @media (max-width: 767px) {
   #map-canvas {
     width: 60%;
     height: 400px; }
 
   #panel {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+
+  .storelocator-filter {
+    position: static;
+    margin-top: 10px; }
+
+  .show-more {
+    display: block;
+    margin: 30px auto 0 auto;
+    font-size: 14px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border: 2px solid #a33d2c;
+    width: 170px; }
+    .show-more:hover {
+      text-decoration: none; }
+
+  #panel.tall {
+    height: 1550px; }
+
+  #panel {
+    margin-top: 40px;
+    height: 600px; }
+    #panel li.store:nth-of-type(4),
+    #panel li.store:nth-of-type(5),
+    #panel li.store:nth-of-type(6),
+    #panel li.store:nth-of-type(7),
+    #panel li.store:nth-of-type(8),
+    #panel li.store:nth-of-type(9),
+    #panel li.store:nth-of-type(10) {
+      display: none; }
+    #panel li.store:nth-of-type(4).visible,
+    #panel li.store:nth-of-type(5).visible,
+    #panel li.store:nth-of-type(6).visible,
+    #panel li.store:nth-of-type(7).visible,
+    #panel li.store:nth-of-type(8).visible,
+    #panel li.store:nth-of-type(9).visible,
+    #panel li.store:nth-of-type(10).visible {
+      display: block; } }
 @media (max-width: 660px) {
   #map-canvas {
     width: 80%; } }

@@ -996,9 +996,46 @@
         </div>
         <div class="col-xs-12 col-sm-6">
           <div id="panel"></div>
+          <div class="show-more">
+            <a href="#">Show more</a>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- script for show more button -->
+    <script>
+
+      $( document ).ready(function() {
+        $(document).on("click", ".show-more a", function(e) {
+        		e.preventDefault();
+            if($(this).text() == "Show more"){
+                $(this).text("Show less")
+                $('#panel').addClass('tall')
+                $('li.store:nth-of-type(4)').addClass('visible')
+                $('li.store:nth-of-type(5)').addClass('visible')
+                $('li.store:nth-of-type(6)').addClass('visible')
+                $('li.store:nth-of-type(7)').addClass('visible')
+                $('li.store:nth-of-type(8)').addClass('visible')
+                $('li.store:nth-of-type(9)').addClass('visible')
+                $('li.store:nth-of-type(10)').addClass('visible')
+            } else {
+                $(this).text("Show more")
+                $('#panel').removeClass('tall')
+                $('li.store:nth-of-type(4)').removeClass('visible')
+                $('li.store:nth-of-type(5)').removeClass('visible')
+                $('li.store:nth-of-type(6)').removeClass('visible')
+                $('li.store:nth-of-type(7)').removeClass('visible')
+                $('li.store:nth-of-type(8)').removeClass('visible')
+                $('li.store:nth-of-type(9)').removeClass('visible')
+                $('li.store:nth-of-type(10)').removeClass('visible')
+            };
+
+            $this.text(linkText);
+        });
+      });
+
+    </script>
     <!-- end locations section -->
 
     <!-- nav link scroll point -->
@@ -1050,7 +1087,7 @@
             <br>
             +1 415-813-5045
             <br>
-            hana@brandedspiritsusa.com
+            olmajorbaconbourbon@brandedspiritsusa.com
           </p>
           <div class="office-map" style="overflow: hidden;">
               <iframe style="position:relative; top:-50px; border:none;" src="https://www.google.com/maps/d/embed?mid=1MMQhdWelzSPPP1iyYGn66LwRDD4" width="300" height="300"></iframe>
