@@ -8224,7 +8224,7 @@ p {
 /* =Menu
 ----------------------------------------------------- */
 .site-menu {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
   bottom: 0;
   font-size: 14px;
   height: 100%;
@@ -8435,14 +8435,14 @@ p {
   text-align: center;
   min-height: 100vh;
   background-color: #222121;
-  padding-bottom: 50px; }
+  padding-bottom: 30px; }
   .about p {
     font-size: 1.9em;
     width: 50%;
     margin: 0 auto; }
   .about img {
     width: 310px;
-    margin-top: 2%; }
+    margin-top: 3%; }
 
 @media (max-width: 1024px) and (min-height: 667px) {
   .about {
@@ -8499,7 +8499,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat; }
   .our-products img {
-    width: 140px;
+    width: 160px;
     margin-top: 10px; }
   .our-products p {
     font-size: 17px;
@@ -8579,7 +8579,7 @@ p {
     color: #222121;
     font-size: 18px; }
   .cocktails img {
-    width: 120px;
+    width: 150px;
     margin-top: 40px; }
 
 @media (min-width: 1680px) {
@@ -8633,7 +8633,8 @@ p {
         color: #222121; }
         .cocktails .modal-dialog .modal-content .modal-body h5 {
           color: #222121;
-          margin-top: 20px; }
+          margin-top: 20px;
+          font-size: 15px; }
         .cocktails .modal-dialog .modal-content .modal-body .prev-next {
           color: #a33d2c;
           background-color: #fff;
@@ -8656,7 +8657,7 @@ p {
           line-height: 1.5;
           padding: 0; }
           .cocktails .modal-dialog .modal-content .modal-body ul li, .cocktails .modal-dialog .modal-content .modal-body ol li {
-            font-size: 13px; }
+            font-size: 15px; }
         .cocktails .modal-dialog .modal-content .modal-body img {
           width: 80%;
           margin-top: 30px; }
@@ -8784,6 +8785,7 @@ p {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/wood-background.jpg");
   background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/wood-background.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/wood-background.jpg");
+  min-height: 100vh;
   padding-bottom: 60px; }
 
 @media (min-width: 2500px) {
@@ -8918,6 +8920,12 @@ a.action, a.action:visited {
   #panel {
     margin-top: 70px;
     max-height: 420px; } }
+@media (min-width: 1600px) {
+  #panel {
+    max-height: 600px; } }
+@media (min-width: 1900px) {
+  #panel {
+    max-height: 700px; } }
 @media (max-width: 767px) {
   #map-canvas {
     width: 60%;
@@ -8981,6 +8989,12 @@ a.action, a.action:visited {
   .store .action {
     font-size: 0.7em;
     margin-right: 0.5em; } }
+@media (width: 768px) and (height: 1024px) {
+  .locations {
+    min-height: 0; } }
+@media (width: 1024px) and (height: 1366px) {
+  .locations {
+    min-height: 0; } }
 @media (min-width: 1200px) and (min-height: 1050px) {
   #map-canvas {
     width: 90%;
@@ -8999,7 +9013,7 @@ a.action, a.action:visited {
     height: 800px; } }
 @media (min-height: 1300px) {
   #map-canvas {
-    margin-top: 150px; }
+    margin-top: 30px; }
 
   #panel {
     margin-top: 150px; } }

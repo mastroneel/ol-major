@@ -38,7 +38,7 @@ $menu-shadow: 4px 0 16px -4px rgba(0, 0, 0, .2);
 ----------------------------------------------------- */
 .site-menu {
   @extend %transition;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
   bottom: 0;
   font-size: 14px;
   height: 100%;

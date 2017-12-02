@@ -17,7 +17,7 @@
     font-size: 18px;
   }
   img {
-    width: 120px;
+    width: 150px;
     margin-top: 40px;
   }
 }
@@ -76,15 +76,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 .cocktails {
   min-height: 100vh;
   padding-bottom: 80px;
@@ -109,6 +100,7 @@
         h5 {
           color: $gray;
           margin-top: 20px;
+          font-size: 15px;
         }
         .prev-next {
           color: $red;
@@ -137,7 +129,7 @@
           line-height: 1.5;
           padding: 0;
           li {
-            font-size: 13px;;
+            font-size: 15px;;
           }
         }
         img {

@@ -13,7 +13,7 @@
   background:
       linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url("../img/wood-background.jpg");
-
+  min-height: 100vh;
   padding-bottom: 60px;
 }
 
@@ -184,6 +184,8 @@ a.action, a.action:visited {
 // Media queries
 // *************
 
+
+
 @media (max-width: 1032px) {
   #panel {
     width: 300px;
@@ -204,6 +206,18 @@ a.action, a.action:visited {
   #panel {
     margin-top: 70px;
     max-height: 420px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #panel {
+    max-height: 600px;
+  }
+}
+
+@media (min-width: 1900px) {
+  #panel {
+    max-height: 700px;
   }
 }
 
@@ -299,6 +313,18 @@ a.action, a.action:visited {
 // Media queries
 // **************
 
+@media (width: 768px) and (height: 1024px) {
+  .locations {
+    min-height: 0;
+  }
+}
+
+@media (width: 1024px) and (height: 1366px) {
+  .locations {
+    min-height: 0;
+  }
+}
+
 @media (min-width: 1200px) and (min-height: 1050px) {
     #map-canvas {
       width: 90%;
@@ -323,7 +349,7 @@ a.action, a.action:visited {
 
 @media (min-height: 1300px) {
     #map-canvas {
-      margin-top: 150px
+      margin-top: 30px
     }
     #panel {
       margin-top: 150px;
