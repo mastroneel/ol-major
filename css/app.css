@@ -8202,6 +8202,25 @@ p {
 @media (max-width: 500px) {
   .title li h1 {
     font-size: 2.7em; } }
+.scroll-to-top {
+  display: none;
+  height: 50px;
+  width: 50px;
+  background-color: #a33d2c;
+  border: 1px solid #a33d2c;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1000;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  color: #fff; }
+  .scroll-to-top:hover {
+    color: #fff; }
+  .scroll-to-top i {
+    font-size: 24px;
+    padding-top: 10px; }
+
 /* =Variables + Placeholder
 ----------------------------------------------------- */
 .site-menu, .toggle-overlay-label {
@@ -8506,6 +8525,9 @@ p {
     text-transform: uppercase;
     margin-top: 8px;
     margin-bottom: -5px; }
+  .our-products .price {
+    font-family: 'Athelas', serif;
+    margin-top: -5px; }
   .our-products h6 {
     font-family: 'There Can Only Be One';
     font-size: 18px;
