@@ -8146,7 +8146,6 @@ button.close {
   font-family: 'There Can Only Be One';
   src: url("../fonts/there-can-only-be-one.ttf"); }
 .agemodal {
-  display: none;
   height: 100%;
   left: 0;
   position: fixed;
