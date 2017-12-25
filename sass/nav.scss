@@ -257,8 +257,8 @@ $menu-shadow: 4px 0 16px -4px rgba(0, 0, 0, .2);
       margin-top: 50px;
       li {
         a {
-          font-size: 2.3em;
-          margin: 0 25px;
+          font-size: 2em;
+          margin: 0 20px;
         }
       }
     }
@@ -275,7 +275,7 @@ $menu-shadow: 4px 0 16px -4px rgba(0, 0, 0, .2);
       margin-top: 60px;
       li {
         a {
-          font-size: 3em;
+          font-size: 2.5em;
           margin: 0 25px;
         }
       }
@@ -283,7 +283,7 @@ $menu-shadow: 4px 0 16px -4px rgba(0, 0, 0, .2);
   }
 }
 
-@media (max-width: 1074px) {
+@media (max-width: 1220px) {
   .nav-desktop {
     img {
       width: 250px;
@@ -292,6 +292,22 @@ $menu-shadow: 4px 0 16px -4px rgba(0, 0, 0, .2);
       li {
         a {
           font-size: 1.2em;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 951px) {
+  .nav-desktop {
+    img {
+      width: 250px;
+    }
+    ul {
+      li {
+        a {
+          font-size: 1em;
           margin: 0 10px;
         }
       }

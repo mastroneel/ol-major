@@ -8557,8 +8557,8 @@ p {
   .nav-desktop ul {
     margin-top: 50px; }
     .nav-desktop ul li a {
-      font-size: 2.3em;
-      margin: 0 25px; } }
+      font-size: 2em;
+      margin: 0 20px; } }
 @media (min-width: 1980px) {
   .nav-desktop img {
     width: 500px;
@@ -8566,13 +8566,19 @@ p {
   .nav-desktop ul {
     margin-top: 60px; }
     .nav-desktop ul li a {
-      font-size: 3em;
+      font-size: 2.5em;
       margin: 0 25px; } }
-@media (max-width: 1074px) {
+@media (max-width: 1220px) {
   .nav-desktop img {
     width: 250px; }
   .nav-desktop ul li a {
     font-size: 1.2em;
+    margin: 0 10px; } }
+@media (max-width: 951px) {
+  .nav-desktop img {
+    width: 250px; }
+  .nav-desktop ul li a {
+    font-size: 1em;
     margin: 0 10px; } }
 .hero {
   min-height: 100vh;
@@ -9338,5 +9344,50 @@ a.action, a.action:visited {
     margin-bottom: 15px; }
   .footer .facebook {
     font-size: 30px; }
+
+.assets {
+  background-color: #222121;
+  min-height: 100vh; }
+  .assets ul {
+    margin: 50px 0 0 40px;
+    list-style-type: none; }
+    .assets ul li a {
+      font-size: 35px; }
+
+.nav-assets {
+  position: relative;
+  background: #222121; }
+
+@media (min-width: 1680px) {
+  .assets ul {
+    margin: 80px 0 0 50px; }
+    .assets ul li {
+      margin-top: 25px; }
+      .assets ul li a {
+        font-size: 40px; } }
+@media (min-width: 1920px) {
+  .assets ul {
+    margin-top: 90px; }
+    .assets ul li {
+      margin-top: 25px; }
+      .assets ul li a {
+        font-size: 50px; } }
+@media (min-width: 2500px) {
+  .assets ul {
+    margin-top: 90px; }
+    .assets ul li {
+      margin-top: 25px; }
+      .assets ul li a {
+        font-size: 70px; } }
+@media (max-width: 575px) {
+  .assets ul li {
+    margin-top: 15px; }
+    .assets ul li a {
+      font-size: 25px; } }
+@media (max-width: 400px) {
+  .assets ul li {
+    margin-top: 15px; }
+    .assets ul li a {
+      font-size: 20px; } }
 
 /*# sourceMappingURL=app.css.map */
