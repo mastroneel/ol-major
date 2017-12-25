@@ -8146,6 +8146,7 @@ button.close {
   font-family: 'There Can Only Be One';
   src: url("../fonts/there-can-only-be-one.ttf"); }
 .agemodal {
+  display: none;
   height: 100%;
   left: 0;
   position: fixed;
@@ -9333,6 +9334,9 @@ a.action, a.action:visited {
   background-color: #222121;
   padding: 40px 0; }
   .footer img {
-    width: 300px; }
+    width: 300px;
+    margin-bottom: 15px; }
+  .footer .facebook {
+    font-size: 30px; }
 
 /*# sourceMappingURL=app.css.map */
