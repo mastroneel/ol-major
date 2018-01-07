@@ -9343,7 +9343,8 @@ a.action, a.action:visited {
     width: 300px;
     margin-bottom: 15px; }
   .footer .facebook {
-    font-size: 30px; }
+    font-size: 30px;
+    margin: 5px; }
 
 .assets {
   background-color: #222121;
