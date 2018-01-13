@@ -1,13 +1,13 @@
 <?php
 if(isset($_POST['submit'])){
-    $to = "olmajorbaconbourbon@brandedspiritsusa.com"; // this is your Email address
+    $to = "olmajor@brandedspiritsusa.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $name = $_POST['name'];
     $company = $_POST['company'];
     $companytype = $_POST['companytype'];
     $phone = $_POST['phone'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
+    $subject = "Ol' Major Form Submission";
+    $subject2 = "Copy of your Ol' Major form submission";
     $message = $name . " wrote the following:" . "\n\n" . "Name: " . $name . "\n\n" . "Company name: " . $company . "\n\n" .  "Company Type: " . $companytype . "\n\n" . "From: " . $from . "\n\n" . "Phone: " . $phone . "\n\n" . "Message: " . $_POST['message'];
     $message2 = "Here is a copy of your message " . "\n\n" . "Name: " . $name . "\n\n" . "Company name: " . $company . "\n\n" .  "Company Type: " . $companytype . "\n\n" . "From: " . $from . "\n\n" . "Phone: " . $phone . "\n\n" . "Message: " . $_POST['message'];
 
