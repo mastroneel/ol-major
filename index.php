@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- scripts necessary for store locator -->
@@ -1309,6 +1309,7 @@ if(isset($_POST['submit'])){
             <input type="text" name="company">
             <p>Company Type*</p>
             <select class="small-input" name="companytype">
+              <option value="" selected="selected"></option>
               <option value="">Retailer</option>
               <option value="">Distributor</option>
               <option value="">Individual/Customer</option>
