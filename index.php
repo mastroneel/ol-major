@@ -1355,10 +1355,21 @@ endif;
             <input type="text" name="message">
             <p></p>
             <div class="g-recaptcha" data-sitekey="6Ldyk0wUAAAAAMYGyuIrI-pGxlHpgseVDDEPWg36"></div>
-            <div class="button-container">
-              <button class="button" type="submit" name="submit">Submit</button>
-            </div>
+            <p></p>
+            <input class="submit-button" type="submit" name="submit" value="submit">
         </form>
+        <style>
+        .contact input.submit-button {
+          padding: 10px 20px;
+          background-color: #a33d2c;
+          border: 1px solid #a33d2c;
+          border-radius: 3px;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-family: 'Myriad';
+        }
+        </style>
         </div>
         <div class="col-xs-12 col-sm-4 address">
           <h3>Address</h3>
