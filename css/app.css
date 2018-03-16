@@ -9272,15 +9272,15 @@ a.action, a.action:visited {
   .contact .button-container {
     text-align: center;
     margin-top: 30px; }
-    .contact .button-container .button {
-      padding: 10px 20px;
-      background-color: #a33d2c;
-      border: 1px solid #a33d2c;
-      border-radius: 3px;
-      color: #fff;
-      font-family: 'Myriad';
-      text-transform: uppercase;
-      letter-spacing: 1px; }
+  .contact .submit-button {
+    padding: 10px 20px;
+    background-color: #a33d2c;
+    border: 1px solid #a33d2c;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Myriad';
+    text-transform: uppercase;
+    letter-spacing: 1px; }
   .contact .office-map {
     height: 300px;
     display: inline-block;
