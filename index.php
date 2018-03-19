@@ -1335,11 +1335,11 @@ endif;
         <div class="col-xs-12 col-sm-6">
           <form action="" method="POST">
             <p>Your Name*</p>
-            <input type="text" name="name" value="" />
+            <input type="text" name="name" value="" required />
             <p>Company Name*</p>
-            <input type="text" name="company" value="" />
+            <input type="text" name="company" value="" required />
             <p>Company Type*</p>
-            <select class="small-input" name="companytype" value="">
+            <select class="small-input" name="companytype" value="" required />
                 <option value="" selected="selected">Select</option>
                 <option value="Retailer">Retailer</option>
                 <option value="Distributor">Distributor</option>
@@ -1348,11 +1348,11 @@ endif;
                 <option value="Other">Other</option>
             </select>
             <p>Email Address*</p>
-            <input type="text" name="email" value="" />
+            <input type="text" name="email" value="" required />
             <p>Phone Number*</p>
-            <input type="tel" name="phone" value="" />
+            <input type="tel" name="phone" value="" required />
             <p>Message*</p>
-            <input type="text" name="message">
+            <input type="text" name="message" required />
             <p></p>
             <div class="g-recaptcha" data-sitekey="6Ldyk0wUAAAAAMYGyuIrI-pGxlHpgseVDDEPWg36"></div>
             <p></p>
